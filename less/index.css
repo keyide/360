@@ -1,0 +1,390 @@
+/*====reset css===*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+/*====common css===*/
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+/*适配方案*/
+@media (min-width: 320px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media (min-width: 350px) {
+  html {
+    font-size: 29.16666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 30px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 31.25px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 33.33333333px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 34.5px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 35.33333333px;
+  }
+}
+@media (min-width: 450px) {
+  html {
+    font-size: 37.5px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 40px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 45px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 53.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 60px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 82.66666667px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 100px;
+  }
+}
+.one {
+  width: 100%;
+  padding-top: 1rem;
+}
+.one .header {
+  margin-bottom: 0.6rem;
+  height: 1.86rem;
+  background: url("../images/logo.png") no-repeat center / 2.51rem 1.86rem;
+}
+.one .text {
+  width: 100%;
+  text-align: center;
+}
+.one .text img {
+  height: 0.93rem;
+  opacity: 0.3;
+  margin: 0 0.35rem;
+}
+.one .txt {
+  height: 0.49rem;
+  background: url("../images/info_1.png") no-repeat center / 7.72rem 0.49rem;
+  margin-top: 0.6rem;
+}
+.one.current .text img {
+  margin: 0 0.1rem;
+  opacity: 1;
+  transition: all 1s;
+}
+.two {
+  width: 100%;
+}
+.two .left {
+  width: 4.5rem;
+  display: inline-block;
+  margin-top: 0.8rem;
+  margin-left: 1.4rem;
+}
+.two .left img:nth-child(1),
+.two .left img:nth-child(2),
+.two .left img:nth-child(3) {
+  height: 1.5rem;
+}
+.two .left img:nth-child(4),
+.two .left img:nth-child(5),
+.two .left img:nth-child(6) {
+  height: 1.78rem;
+}
+.two .left img:nth-child(7),
+.two .left img:nth-child(8),
+.two .left img:nth-child(9) {
+  height: 1.54rem;
+}
+.two .left img {
+  transform: rotateX(-90deg) rotateY(-90deg) rotateZ(180deg);
+}
+.two .right {
+  float: right;
+  margin-top: 1.3rem;
+  margin-right: 1.1rem;
+}
+.two .right img {
+  height: 3.09rem;
+}
+.two.current .left img {
+  transform: none;
+  transition: all 1s;
+}
+.three {
+  width: 100%;
+  overflow: hidden;
+}
+.three .left {
+  display: inline-block;
+  margin-top: 1.8rem;
+  margin-left: 1.2rem;
+}
+.three .left img {
+  height: 2.78rem;
+}
+.three .right {
+  float: right;
+  margin-top: 1.2rem;
+  margin-right: 1.2rem;
+  position: relative;
+}
+.three .right img:first-child {
+  height: 4.49rem;
+  transform: rotateZ(36000deg);
+}
+.three .right img:last-child {
+  height: 2.04rem;
+  position: absolute;
+  top: 5.7rem;
+  left: -3.2rem;
+}
+.three.current .right img:first-child {
+  transition: all 100s 1s;
+  transform: rotateZ(0deg);
+}
+.three.current .right img:last-child {
+  transition: all 1s;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+.four {
+  width: 100%;
+}
+.four .left {
+  width: 5.29rem;
+  height: 5rem;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  overflow: hidden;
+  position: relative;
+}
+.four .left .search {
+  transform: translate(-5.5rem);
+}
+.four .left .search img {
+  height: 0.66rem;
+}
+.four .left .result {
+  overflow: hidden;
+  margin-top: -0.15rem;
+}
+.four .left .result img {
+  height: 3.72rem;
+  margin-top: -0.15rem;
+  transform: translateY(-3.7rem);
+}
+.four .left .spr {
+  height: 0.22rem;
+  width: 0;
+  background: url("../images/key.png") no-repeat center left / 0.99rem 0.22rem;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+}
+.four .right {
+  float: right;
+  margin-top: 1rem;
+  margin-right: 0.8rem;
+}
+.four .right img {
+  height: 2.99rem;
+}
+.four.current .left .search {
+  transform: none;
+  transition: all 1s;
+}
+.four.current .left .result img {
+  transform: none;
+  transition: all 1s 2.5s;
+}
+.four.current .left .spr {
+  width: 0.99rem;
+  transition: all 1s steps(5) 1.3s;
+}
+.five {
+  padding-top: 0.2rem;
+}
+.five .text {
+  text-align: center;
+}
+.five .text img {
+  height: 1.34rem;
+}
+.five .box {
+  width: 10.04rem;
+  height: 5rem;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.five .box .header {
+  opacity: 0;
+}
+.five .box .header img {
+  height: 0.79rem;
+}
+.five .box .big {
+  height: 0.29rem;
+  width: 0;
+  position: absolute;
+  top: 0.3rem;
+  left: 0.71rem;
+  overflow: hidden;
+}
+.five .box .small {
+  height: 0.27rem;
+  width: 9.17rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.five .box .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.five .box .footer img {
+  height: 0.29rem;
+  display: block;
+}
+.five .box .line {
+  background-color: #fff;
+  position: absolute;
+}
+.five .box .top {
+  height: 1px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(110%, 0);
+}
+.five .box .left {
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 0;
+  transform: translate(0, -110%);
+}
+.five .box .right {
+  height: 100%;
+  width: 1px;
+  top: 0;
+  right: 0;
+  transform: translate(0, 110%);
+}
+.five .box .bottom {
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translate(-110%, 0);
+}
+.five .box .mid {
+  height: 1px;
+  width: 100%;
+  bottom: 0.3rem;
+  transform: translate(110%, 0);
+}
+.five.current .box .line {
+  transform: none;
+  transition: all 1.8s;
+}
+.five.current .box .big {
+  width: 9.19rem;
+  transition: all 1s 2.5s;
+}
+.five.current .box .mid {
+  transform: none;
+  transition: all 1s 3s;
+}
+.five.current .header,
+.five.current .footer {
+  opacity: 1;
+  transition: all 1s 1.2s;
+}
